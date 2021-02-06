@@ -6,12 +6,12 @@ import java.util.Random;
 import Model.Venda;
 
 public class GeradorVendas {
-	private Random rand;
+	private Random rand = new Random();
 	private long operacao = 0;
 	private BigDecimal valorIngresso = BigDecimal.valueOf(500);
 	
-	public void CriarVenda() {
-		Venda venda = GerarVenda();
+	public Venda CriarVenda() {
+		return GerarVenda();
 	}
 	
 	private Venda GerarVenda() {

@@ -1,11 +1,11 @@
 package Main;
-
-import Servico.GeradorVendas;
+import Producer.Produtor;
 
 public class Main {
 	
-	public static void main(String[] args) {
-		GeradorVendas gerador = new GeradorVendas();
-		gerador.CriarVenda();		
+	public static void main(String[] args) throws InterruptedException {		
+		
+		Produtor produtor = new Produtor();
+		produtor.EnviarMensagem();
 	}
 }
