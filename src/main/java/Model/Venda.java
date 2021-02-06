@@ -16,6 +16,10 @@ public class Venda {
 		this.quantidadeIngressos = quantidadeIngressos;
 		this.valorTotal = valorTotal;		
 	}
+	
+	public Venda() {
+		
+	}
 
 	public Long getPperacao() {
 		return pperacao;
